@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EventHub - Campus Event Management</title>
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="logo">Event<span>Hub</span></a>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="destination.html">About</a></li>
+      <li><a href="packages.html">Events</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div>
+      <h1>Discover Campus <span>Events</span></h1>
+      <p>Your one-stop destination for all university events — from tech fests to cultural nights. Never miss what matters.</p>
+      <a href="packages.html" class="btn btn-primary">Explore Events</a>
+      <a href="contact.html" class="btn btn-outline">Get In Touch</a>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Event Categories</h2>
+    <p class="section-subtitle">Browse events by category and find what excites you</p>
+    <div class="categories">
+      <span class="category-pill active">All Events</span>
+      <span class="category-pill">🎭 Cultural</span>
+      <span class="category-pill">💻 Technical</span>
+      <span class="category-pill">🏅 Sports</span>
+      <span class="category-pill">🎨 Arts</span>
+      <span class="category-pill">📚 Workshops</span>
+    </div>
+    <div class="grid grid-3">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&h=400&fit=crop" alt="Tech Fest">
+        <div class="card-body">
+          <span class="tag">Technical</span>
+          <h3>Annual Tech Fest</h3>
+          <p>Hackathons, coding competitions, and tech talks from industry leaders.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600&h=400&fit=crop" alt="Cultural Night">
+        <div class="card-body">
+          <span class="tag">Cultural</span>
+          <h3>Cultural Night</h3>
+          <p>Music, dance, drama, and performances celebrating diversity on campus.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1461896836934-bd45ba8a0a58?w=600&h=400&fit=crop" alt="Sports Meet">
+        <div class="card-body">
+          <span class="tag">Sports</span>
+          <h3>Sports Championship</h3>
+          <p>Inter-department tournaments in cricket, football, basketball and more.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h4>Event<span style="color:var(--primary)">Hub</span></h4>
+        <p>Your campus event companion. Stay connected, stay informed, stay inspired.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul><li><a href="index.html">Home</a></li><li><a href="destination.html">About</a></li><li><a href="packages.html">Events</a></li></ul>
+      </div>
+      <div>
+        <h4>More</h4>
+        <ul><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>📧 events@university.edu</p>
+        <p>📞 +91-9876543210</p>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 EventHub. All rights reserved.</div>
+  </footer>
+  <script>
+document.addEventListener("DOMContentLoaded",function(){
+  var h=document.querySelector(".hamburger"),n=document.querySelector("nav ul");
+  if(h)h.addEventListener("click",function(){n.classList.toggle("open")});
+  document.querySelectorAll("nav ul li a").forEach(function(a){a.addEventListener("click",function(){n.classList.remove("open")})});
+  var p=location.pathname.split("/").pop()||"index.html";
+  document.querySelectorAll("nav ul li a").forEach(function(a){if(a.getAttribute("href")===p)a.classList.add("active")});
+  var pills=document.querySelectorAll(".category-pill");
+  pills.forEach(function(pill){pill.addEventListener("click",function(){pills.forEach(function(p){p.classList.remove("active")});pill.classList.add("active")})});
+  var lb=document.querySelector(".lightbox"),lbi=lb?lb.querySelector("img"):null;
+  document.querySelectorAll(".gallery-item").forEach(function(item){item.addEventListener("click",function(){if(lb&&lbi){lbi.src=item.querySelector("img").src;lb.classList.add("active")}})});
+  if(lb){lb.querySelector(".close").addEventListener("click",function(){lb.classList.remove("active")});lb.addEventListener("click",function(e){if(e.target===lb)lb.classList.remove("active")})}
+  var f=document.getElementById("contactForm");
+  if(f)f.addEventListener("submit",function(e){e.preventDefault();alert("Thank you! Your message has been sent.");f.reset()});
+});
+</script>
+</body>
+</html>
