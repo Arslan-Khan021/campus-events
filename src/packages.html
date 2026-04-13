@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events - EventHub</title>
+   <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="logo">Event<span>Hub</span></a>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="destination.html">About</a></li>
+      <li><a href="packages.html">Events</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero" style="min-height:50vh">
+    <div>
+      <h1>Upcoming <span>Events</span></h1>
+      <p>Don't miss out on the most exciting events this semester</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="grid grid-3">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&h=400&fit=crop" alt="Hackathon">
+        <div class="card-body">
+          <span class="tag">Technical</span>
+          <h3>Code Crunch Hackathon</h3>
+          <p>24-hour hackathon where teams build innovative solutions. Prizes worth ₹50,000. Open to all departments.</p>
+          <p class="date">📅 May 15-16, 2026 &nbsp;|&nbsp; 📍 CS Auditorium</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=600&h=400&fit=crop" alt="Cultural Fest">
+        <div class="card-body">
+          <span class="tag">Cultural</span>
+          <h3>Rhythm & Blues Festival</h3>
+          <p>Live performances, dance battles, and a DJ night to remember. Featuring guest artists from across the city.</p>
+          <p class="date">📅 June 2-3, 2026 &nbsp;|&nbsp; 📍 Open Air Theatre</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=600&h=400&fit=crop" alt="Workshop">
+        <div class="card-body">
+          <span class="tag">Workshop</span>
+          <h3>AI & Machine Learning Workshop</h3>
+          <p>Hands-on workshop with industry mentors. Learn to build real ML models in just two days.</p>
+          <p class="date">📅 June 10-11, 2026 &nbsp;|&nbsp; 📍 Lab Block B</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?w=600&h=400&fit=crop" alt="Sports">
+        <div class="card-body">
+          <span class="tag">Sports</span>
+          <h3>Inter-College Basketball Cup</h3>
+          <p>Top college teams compete for the championship trophy. Free entry for all students.</p>
+          <p class="date">📅 June 20-22, 2026 &nbsp;|&nbsp; 📍 Sports Complex</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=600&h=400&fit=crop" alt="TEDx">
+        <div class="card-body">
+          <span class="tag">Seminar</span>
+          <h3>TEDx Campus Talk</h3>
+          <p>Inspiring talks from entrepreneurs, researchers and change-makers. Limited seats — register early!</p>
+          <p class="date">📅 July 5, 2026 &nbsp;|&nbsp; 📍 Main Auditorium</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div><h4>Event<span style="color:var(--primary)">Hub</span></h4><p>Your campus event companion.</p></div>
+      <div><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="destination.html">About</a></li></ul></div>
+      <div><h4>More</h4><ul><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Contact</h4><p>📧 events@university.edu</p></div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 EventHub. All rights reserved.</div>
+  </footer>
+  <script>
+document.addEventListener("DOMContentLoaded",function(){
+  var h=document.querySelector(".hamburger"),n=document.querySelector("nav ul");
+  if(h)h.addEventListener("click",function(){n.classList.toggle("open")});
+  document.querySelectorAll("nav ul li a").forEach(function(a){a.addEventListener("click",function(){n.classList.remove("open")})});
+  var p=location.pathname.split("/").pop()||"index.html";
+  document.querySelectorAll("nav ul li a").forEach(function(a){if(a.getAttribute("href")===p)a.classList.add("active")});
+  var pills=document.querySelectorAll(".category-pill");
+  pills.forEach(function(pill){pill.addEventListener("click",function(){pills.forEach(function(p){p.classList.remove("active")});pill.classList.add("active")})});
+  var lb=document.querySelector(".lightbox"),lbi=lb?lb.querySelector("img"):null;
+  document.querySelectorAll(".gallery-item").forEach(function(item){item.addEventListener("click",function(){if(lb&&lbi){lbi.src=item.querySelector("img").src;lb.classList.add("active")}})});
+  if(lb){lb.querySelector(".close").addEventListener("click",function(){lb.classList.remove("active")});lb.addEventListener("click",function(e){if(e.target===lb)lb.classList.remove("active")})}
+  var f=document.getElementById("contactForm");
+  if(f)f.addEventListener("submit",function(e){e.preventDefault();alert("Thank you! Your message has been sent.");f.reset()});
+});
+</script>
+</body>
+</html>
