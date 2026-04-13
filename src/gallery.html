@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
+
   <nav>
     <a href="index.html" class="logo">Event<span>Hub</span></a>
     <div class="hamburger"><span></span><span></span><span></span></div>
@@ -28,74 +29,149 @@
 
   <section>
     <div class="gallery-grid">
+
       <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&h=400&fit=crop" alt="Event 1">
+        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&h=400&fit=crop" alt="Tech Fest">
         <div class="overlay">Tech Fest 2025</div>
       </div>
+
       <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600&h=600&fit=crop" alt="Event 2">
+        <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600&h=600&fit=crop" alt="Cultural Night">
         <div class="overlay">Cultural Night</div>
       </div>
+
       <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=600&h=350&fit=crop" alt="Event 3">
+        <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=600&h=350&fit=crop" alt="Workshop">
         <div class="overlay">Workshop Day</div>
       </div>
+
       <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=600&h=500&fit=crop" alt="Event 4">
+        <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=600&h=500&fit=crop" alt="TEDx">
         <div class="overlay">TEDx Talks</div>
       </div>
+
       <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?w=600&h=400&fit=crop" alt="Event 5">
+        <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?w=600&h=400&fit=crop" alt="Sports Day">
         <div class="overlay">Sports Day</div>
       </div>
+
       <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=600&h=450&fit=crop" alt="Event 6">
+        <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=600&h=450&fit=crop" alt="Music Fest">
         <div class="overlay">Music Fest</div>
       </div>
+
       <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=600&h=400&fit=crop" alt="Event 7">
+        <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=600&h=400&fit=crop" alt="Graduation">
         <div class="overlay">Graduation Day</div>
       </div>
+
       <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=600&h=500&fit=crop" alt="Event 8">
+        <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=600&h=500&fit=crop" alt="Robotics">
         <div class="overlay">Robotics Expo</div>
       </div>
+
       <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&h=350&fit=crop" alt="Event 9">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&h=350&fit=crop" alt="Hackathon">
         <div class="overlay">Hackathon 2025</div>
       </div>
+
     </div>
   </section>
 
+  <!-- ✅ FIXED LIGHTBOX -->
   <div class="lightbox">
     <span class="close">&times;</span>
-    <img src="" alt="Preview">
+   <img alt="Preview">
   </div>
 
   <footer>
     <div class="footer-grid">
-      <div><h4>Event<span style="color:var(--primary)">Hub</span></h4><p>Your campus event companion.</p></div>
-      <div><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="destination.html">About</a></li></ul></div>
-      <div><h4>More</h4><ul><li><a href="packages.html">Events</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-      <div><h4>Contact</h4><p>📧 events@university.edu</p></div>
+      <div>
+        <h4>Event<span style="color:var(--primary)">Hub</span></h4>
+        <p>Your campus event companion.</p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destination.html">About</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>More</h4>
+        <ul>
+          <li><a href="packages.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <p>📧 events@university.edu</p>
+      </div>
     </div>
-    <div class="footer-bottom">&copy; 2026 EventHub. All rights reserved.</div>
+
+    <div class="footer-bottom">
+      &copy; 2026 EventHub. All rights reserved.
+    </div>
   </footer>
+
   <script>
-document.addEventListener("DOMContentLoaded",function(){
-  var h=document.querySelector(".hamburger"),n=document.querySelector("nav ul");
-  if(h)h.addEventListener("click",function(){n.classList.toggle("open")});
-  document.querySelectorAll("nav ul li a").forEach(function(a){a.addEventListener("click",function(){n.classList.remove("open")})});
-  var p=location.pathname.split("/").pop()||"index.html";
-  document.querySelectorAll("nav ul li a").forEach(function(a){if(a.getAttribute("href")===p)a.classList.add("active")});
-  var pills=document.querySelectorAll(".category-pill");
-  pills.forEach(function(pill){pill.addEventListener("click",function(){pills.forEach(function(p){p.classList.remove("active")});pill.classList.add("active")})});
-  var lb=document.querySelector(".lightbox"),lbi=lb?lb.querySelector("img"):null;
-  document.querySelectorAll(".gallery-item").forEach(function(item){item.addEventListener("click",function(){if(lb&&lbi){lbi.src=item.querySelector("img").src;lb.classList.add("active")}})});
-  if(lb){lb.querySelector(".close").addEventListener("click",function(){lb.classList.remove("active")});lb.addEventListener("click",function(e){if(e.target===lb)lb.classList.remove("active")})}
-  var f=document.getElementById("contactForm");
-  if(f)f.addEventListener("submit",function(e){e.preventDefault();alert("Thank you! Your message has been sent.");f.reset()});
+document.addEventListener("DOMContentLoaded", function () {
+
+  // Hamburger
+  var h = document.querySelector(".hamburger"),
+      n = document.querySelector("nav ul");
+
+  if (h) {
+    h.addEventListener("click", function () {
+      n.classList.toggle("open");
+    });
+  }
+
+  // Close menu on click
+  document.querySelectorAll("nav ul li a").forEach(function (a) {
+    a.addEventListener("click", function () {
+      n.classList.remove("open");
+    });
+  });
+
+  // Active link
+  var p = location.pathname.split("/").pop() || "index.html";
+  document.querySelectorAll("nav ul li a").forEach(function (a) {
+    if (a.getAttribute("href") === p) a.classList.add("active");
+  });
+
+  // Lightbox
+  var lb = document.querySelector(".lightbox"),
+      lbi = lb ? lb.querySelector("img") : null;
+
+  document.querySelectorAll(".gallery-item").forEach(function (item) {
+    item.addEventListener("click", function () {
+      if (lb && lbi) {
+        var img = item.querySelector("img");
+        if (img && img.src) {
+          lbi.src = img.src;
+          lb.classList.add("active");
+        }
+      }
+    });
+  });
+
+  if (lb) {
+    lb.querySelector(".close").addEventListener("click", function () {
+      lb.classList.remove("active");
+    });
+
+    lb.addEventListener("click", function (e) {
+      if (e.target === lb) lb.classList.remove("active");
+    });
+  }
+
 });
 </script>
+
 </body>
 </html>

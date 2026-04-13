@@ -1,0 +1,23 @@
+22
+48D:\Assignemnt2Devops\campus-events\.dockerignore134205395197194209 0
+47D:\Assignemnt2Devops\campus-events\package.json134205527367715203 0
+53D:\Assignemnt2Devops\campus-events\dist\packages.html134205527423314431 0
+39D:\Assignemnt2Devops\campus-events\dist134205527423959580 1
+52D:\Assignemnt2Devops\campus-events\package-lock.json134205395197289347 0
+45D:\Assignemnt2Devops\campus-events\.gitignore134205395197289347 0
+38D:\Assignemnt2Devops\campus-events\src134205523765229998 1
+45D:\Assignemnt2Devops\campus-events\Dockerfile134205395197289347 0
+44D:\Assignemnt2Devops\campus-events\README.md134205395197289347 0
+41D:\Assignemnt2Devops\campus-events\styles134205451348306143 1
+51D:\Assignemnt2Devops\campus-events\styles\style.css134205451348306143 0
+51D:\Assignemnt2Devops\campus-events\src\contact.html134205445537676085 0
+55D:\Assignemnt2Devops\campus-events\src\destination.html134205510174229378 0
+51D:\Assignemnt2Devops\campus-events\src\gallery.html134205526578220924 0
+49D:\Assignemnt2Devops\campus-events\src\index.html134205523765229998 0
+52D:\Assignemnt2Devops\campus-events\src\packages.html134205451348306143 0
+66D:\Assignemnt2Devops\campus-events\dist\campus-events.410cce00.css134205527423909555 0
+70D:\Assignemnt2Devops\campus-events\dist\campus-events.410cce00.css.map134205527423949579 0
+52D:\Assignemnt2Devops\campus-events\dist\contact.html134205527423374205 0
+56D:\Assignemnt2Devops\campus-events\dist\destination.html134205527423154402 0
+52D:\Assignemnt2Devops\campus-events\dist\gallery.html134205527423899555 0
+50D:\Assignemnt2Devops\campus-events\dist\index.html134205527423909555 0
