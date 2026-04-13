@@ -1,0 +1,23 @@
+22
+62C:\Users\salee\Downloads\devops\assignment2\campus-events\dist134205454757910116 1
+71C:\Users\salee\Downloads\devops\assignment2\campus-events\.dockerignore134205453003570005 0
+70C:\Users\salee\Downloads\devops\assignment2\campus-events\package.json134205454615796748 0
+75C:\Users\salee\Downloads\devops\assignment2\campus-events\package-lock.json134205453625243979 0
+68C:\Users\salee\Downloads\devops\assignment2\campus-events\.gitignore134205453003570005 0
+68C:\Users\salee\Downloads\devops\assignment2\campus-events\Dockerfile134205453003570005 0
+67C:\Users\salee\Downloads\devops\assignment2\campus-events\README.md134205453003580021 0
+74C:\Users\salee\Downloads\devops\assignment2\campus-events\styles\style.css134205453862327931 0
+61C:\Users\salee\Downloads\devops\assignment2\campus-events\src134205453312941979 1
+64C:\Users\salee\Downloads\devops\assignment2\campus-events\styles134205453003603494 1
+74C:\Users\salee\Downloads\devops\assignment2\campus-events\src\contact.html134205453726031165 0
+78C:\Users\salee\Downloads\devops\assignment2\campus-events\src\destination.html134205453003593502 0
+73C:\Users\salee\Downloads\devops\assignment2\campus-events\dist\index.html134205454757867577 0
+74C:\Users\salee\Downloads\devops\assignment2\campus-events\src\gallery.html134205453003593502 0
+72C:\Users\salee\Downloads\devops\assignment2\campus-events\src\index.html134205453312957130 0
+75C:\Users\salee\Downloads\devops\assignment2\campus-events\src\packages.html134205453003603494 0
+89C:\Users\salee\Downloads\devops\assignment2\campus-events\dist\campus-events.d881a88a.css134205454757880121 0
+93C:\Users\salee\Downloads\devops\assignment2\campus-events\dist\campus-events.d881a88a.css.map134205454757910116 0
+75C:\Users\salee\Downloads\devops\assignment2\campus-events\dist\contact.html134205454757880121 0
+79C:\Users\salee\Downloads\devops\assignment2\campus-events\dist\destination.html134205454756907995 0
+75C:\Users\salee\Downloads\devops\assignment2\campus-events\dist\gallery.html134205454756867482 0
+76C:\Users\salee\Downloads\devops\assignment2\campus-events\dist\packages.html134205454756917989 0
